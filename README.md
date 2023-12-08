@@ -10,9 +10,9 @@ This API endpoint simulates small-scale military battles using agent-based model
 Method: GET
 
 URL Parameters:
-- n_soldiers (Integer): Optional. The number of soldier agents to be included in the simulation, reasonable value 40-100. Default is 50.
-- n_medics (Integer): Optional. The number of medic agents to be included in the simulation, reasonable value 0-4. Default is 0.
-- n_mines (Integer): Optional. The number of mines to be included on the battlefield,, reasonable value 0-5. Default is 1.
+- n_soldiers (Integer): Optional. The number of allies soldier agents to be included in the simulation, reasonable value 40-100. Default is 50.
+- n_medics (Integer): Optional. The number of allies medic agents to be included in the simulation, reasonable value 0-4. Default is 0.
+- n_mines (Integer): Optional. The number of maximum mines to be included on the battlefield at every point of minefield (random generation), reasonable value 0-5. Default is 1.
 
 Response Format:
 The response is a JSON object containing the final statistics of the battle simulation, such as the number of surviving agents, total damage inflicted, etc.
