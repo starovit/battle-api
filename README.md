@@ -15,7 +15,7 @@ URL Parameters:
 - n_mines (Integer): Optional. The number of maximum mines to be included on the battlefield at every point of minefield (random generation), reasonable value 0-5. Default is 1.
 
 Response Format:
-The response is a JSON object containing the final statistics of the battle simulation, such as the number of surviving agents, total damage inflicted, etc.
+The response is a JSON object containing the final statistics of the battle simulation, such as the number of surviving agents and total health.
 
 Example Request:
 GET [Your server's base URL]/run_simulation?n_soldiers=60&n_medics=2&n_mines=3
@@ -25,6 +25,6 @@ Example Response:
 {
   "Number of allies alive": 30,
   "Number of enemies alive": 28,
-  "Total damage by allies": 1500,
-  "Total damage by enemies": 1400
+  "Allies health": 1500,
+  "Enemies health": 1400
 }
