@@ -5,5 +5,4 @@ scipy
 matplotlib
 seaborn
 Flask
-cv2
 opencv
