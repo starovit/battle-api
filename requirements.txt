@@ -1,8 +1,10 @@
 mesa
-
 numpy
 scipy
 matplotlib
 seaborn
 Flask
 opencv-python
+fastapi
+kaleido
+python-multipart
