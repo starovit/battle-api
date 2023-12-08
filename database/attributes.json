@@ -1,0 +1,38 @@
+{
+    "infantry": {
+        "max_health": 100,
+        "speed": 1,
+        "damage": 10,
+        "damage_range": 6,
+        "damage_chance": 0.4
+    },
+    "medic": {
+        "max_health": 70,
+        "speed": 1,
+        "damage": 5,
+        "damage_range": 3,
+        "damage_chance": 0.2,
+        "special": {
+            "healing": 5,
+            "healing_chance": 0.8,
+            "healing_range": 1,
+            "steps_after_healing": 0
+        }
+    },
+    "mortar": {
+        "max_health": 30,
+        "speed": 1,
+        "damage_range": 99,
+        "special": {
+            "caliber": "projectile_120mm",
+            "steps_after_shot": 30
+        }
+    },
+    "projectile_120mm": {
+        "max_health": 0.001,
+        "speed": 5,
+        "damage": 80,
+        "damage_range": 1,
+        "damage_chance": 0.05
+    }
+}
