@@ -1,16 +1,10 @@
 from flask import Flask, request, jsonify
 import matplotlib.pyplot as plt
-import threading
-import time
-
-import pygame
-import io
-import time
 
 from battlesim.agents import add_agents_to_model, add_agents_to_model
 from battlesim.model import BattleModel
 from battlesim.map_creator import MapCreator
-from battlesim.utils import run_simulation, final_stats
+from battlesim.utils import final_stats
 from battlesim.visualizer import Visualizer # ADDED
 
 app = Flask(__name__)
@@ -44,9 +38,11 @@ def run_battle_simulation():
     max_steps = 150
     for i in range(max_steps):
         model.step()
-        if i%1 == 0:
+        if i%3 == 0:
             fig = visualizer.plot_teritory()
-            fig.savefig("database/teritory.png")
+            fig.savefig("database/teritory.png",
+                        bbox_inches='tight',
+                        pad_inches=0)
             plt.close(fig)
 
     stats = final_stats(model)  # Get final stats

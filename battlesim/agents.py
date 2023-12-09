@@ -399,7 +399,6 @@ def add_agents_to_model(model, case=1, n=50, n_medics=0, n_mortars=0):
         place_agents(model=model, n_soldiers=5, params=params, pos=(40, 70))
         place_agents(model=model, n_soldiers=5, params=params, pos=(60, 70))
         
-        
         ### ALLIES ###
         
         # infantries 
@@ -419,10 +418,10 @@ def add_agents_to_model(model, case=1, n=50, n_medics=0, n_mortars=0):
                      pos=(50, 20))
         
         if n_mortars != 0:
-            params = {"fraction": "ally", "type": "mortar", "movement": "stop", "route": [(40, 90), (60,90)]}
+            params = {"fraction": "ally", "type": "mortar", "movement": "stop", "route": []}
             place_agents(model=model, n_soldiers=n_mortars,
                             params=params,
-                            pos=(50, 20))
+                            pos=(70, 20))
         
     # for visualization
     if case == 1:
