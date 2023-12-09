@@ -18,7 +18,8 @@ def run_battle_simulation():
 
     # create map
     map_creator = MapCreator(size=100)
-    height_map = map_creator.create_height_map()
+    map_creator.read_heights(path_to_file="database/heights.txt")
+    height_map = map_creator.height_map
     mine_map = map_creator.create_mine_map((0,30), (100, 50), n_mines)
 
     # create model
