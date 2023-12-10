@@ -1,4 +1,6 @@
 from flask import Flask, request, jsonify
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
 from battlesim.agents import add_agents_to_model, add_agents_to_model

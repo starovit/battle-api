@@ -1,5 +1,3 @@
-import matplotlib
-matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import scipy.ndimage
 import cv2
